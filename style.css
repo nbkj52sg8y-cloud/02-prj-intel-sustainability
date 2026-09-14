@@ -123,8 +123,22 @@ h1 {
 	font-size: 21px;
 }
 
-.timeline-card p {
+.summary {
 	margin-bottom: 0;
+}
+
+.more-info {
+	max-height: 0;
+	margin: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: max-height 0.35s ease, opacity 0.35s ease, margin-top 0.35s ease;
+}
+
+.timeline-card:hover .more-info {
+	max-height: 180px;
+	margin-top: 12px;
+	opacity: 1;
 }
 
 .timeline-card img {
